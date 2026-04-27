@@ -8,11 +8,13 @@
 
     <title>Сложно сосредоточиться</title>
 
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
 
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
@@ -22,10 +24,15 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <p class="header__lamp" aria-hidden="true">REC</p>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button class="header__theme-menu-button header__theme-menu-button_type_light">День</button>
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_light"
+            >
+              День
+            </button>
           </li>
           <li class="header__theme-menu-item">
             <button
@@ -36,10 +43,19 @@
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button class="header__theme-menu-button header__theme-menu-button_type_dark">Неон</button>
+            <button
+              class="header__theme-menu-button header__theme-menu-button_type_dark"
+            >
+              Неон
+            </button>
           </li>
         </ul>
       </nav>
+      <p class="header__title">no focus</p>
+      <p class="header__description title-decor">
+        Что делать, когда не можешь делать ничего <br />
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
   </body>
 </html>
