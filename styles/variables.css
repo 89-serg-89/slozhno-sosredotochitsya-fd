@@ -5,4 +5,19 @@
 
 :root {
   --padding-page: 10px;
+  --background-page-url: url("../images/cover-image-dark.png");
+  --background-page-color: #000028;
+  --color-accent: #ff0070;
+  --color-main: #f1b2ce;
+  --color-title: #db00ff;
+  --color-title-decor: #000028;
+  --color-decorated-zone: var(--color-accent);
+  --color-button: var(--color-accent);
+  --color-button-border-hover: #ff007040;
+}
+
+@media (width >= 768px) {
+  :root {
+    --padding-page: 20px;
+  }
 }
