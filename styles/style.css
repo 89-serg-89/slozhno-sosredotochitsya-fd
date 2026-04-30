@@ -2,7 +2,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  padding: var(--offset-page);
   background-image: var(--background-page-url);
   background-color: var(--background-page-color);
   background-attachment: fixed;
@@ -10,6 +9,14 @@
   background-size: cover;
   color: var(--color-main);
   position: relative;
+}
+
+.header,
+.footer {
+  padding: var(--offset-page);
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .decorated-zone::before,
@@ -21,15 +28,15 @@
 }
 
 .decorated-zone::before {
-  top: 0;
-  right: 0;
+  top: var(--offset-page);
+  right: var(--offset-page);
   border-inline-end: 1px solid var(--color-accent);
   border-block-start: 1px solid var(--color-accent);
 }
 
 .decorated-zone::after {
-  bottom: 0;
-  left: 0;
+  bottom: var(--offset-page);
+  left: var(--offset-page);
   border-inline-start: 1px solid var(--color-accent);
   border-block-end: 1px solid var(--color-accent);
 }

@@ -2,6 +2,7 @@
   display: grid;
   gap: 50px;
   padding-block: 40px;
+  padding-inline: var(--offset-page);
 }
 
 .section {

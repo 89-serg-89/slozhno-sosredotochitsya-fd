@@ -2,16 +2,12 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: flex-start;
-  position: relative;
-  height: calc(100vh - var(--offset-page) * 2);
-  min-height: calc(648px - var(--offset-page) * 2);
-  margin-block-end: var(--offset-page);
 }
 
 .header__lamp {
   position: absolute;
-  right: 28px;
-  top: 0;
+  right: calc(28px + var(--offset-page));
+  top: var(--offset-page);
   color: var(--color-accent);
   text-transform: uppercase;
   font-size: 18px;
