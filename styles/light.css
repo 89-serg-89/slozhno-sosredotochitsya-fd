@@ -19,6 +19,7 @@
   --color-decorated-zone: var(--color-main);
   --color-button: var(--color-main);
   --color-button-border-hover: #32312d40;
+  --color-section-title: var(--color-main);
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,5 +34,6 @@
     --color-decorated-zone: var(--color-main);
     --color-button: var(--color-main);
     --color-button-border-hover: #32312d40;
+    --color-section-title: var(--color-main);
   }
 }

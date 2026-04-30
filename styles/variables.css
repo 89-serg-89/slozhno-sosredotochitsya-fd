@@ -4,7 +4,7 @@
 */
 
 :root {
-  --padding-page: 10px;
+  --offset-page: 10px;
   --background-page-url: url("../images/cover-image-dark.png");
   --background-page-color: #000028;
   --color-accent: #ff0070;
@@ -14,10 +14,11 @@
   --color-decorated-zone: var(--color-accent);
   --color-button: var(--color-accent);
   --color-button-border-hover: #ff007040;
+  --color-section-title: var(--color-accent);
 }
 
 @media (width >= 768px) {
   :root {
-    --padding-page: 20px;
+    --offset-page: 20px;
   }
 }
