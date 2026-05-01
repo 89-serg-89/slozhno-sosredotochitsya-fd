@@ -20,6 +20,10 @@
   --color-button: var(--color-main);
   --color-button-border-hover: #32312d40;
   --color-section-title: var(--color-main);
+
+  .header__lamp {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,5 +39,9 @@
     --color-button: var(--color-main);
     --color-button-border-hover: #32312d40;
     --color-section-title: var(--color-main);
+  }
+
+  html:not(.theme-dark) .header__lamp {
+    display: none;
   }
 }

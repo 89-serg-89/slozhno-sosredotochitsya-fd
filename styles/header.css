@@ -1,6 +1,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   align-content: flex-start;
 }
 
@@ -26,10 +27,6 @@
   top: 8px;
 }
 
-html.theme-light .header__lamp {
-  display: none;
-}
-
 .header__theme-menu {
   margin-block: 65px;
   justify-self: end;
@@ -49,6 +46,7 @@ html.theme-light .header__lamp {
   line-height: 1em;
   text-align: center;
   height: 26px;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button:hover {
@@ -68,10 +66,9 @@ html.theme-light .header__lamp {
   margin-block-end: 55px;
 }
 
-@media (prefers-color-scheme: light) {
-  html:not(.theme-dark) .header__lamp {
-    display: none;
-  }
+.header__description {
+  align-self: self-end;
+  margin-bottom: 56px;
 }
 
 @media (width >= 768px) {
