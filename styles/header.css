@@ -68,7 +68,7 @@
 
 .header__description {
   align-self: self-end;
-  margin-bottom: 56px;
+  margin-block-end: 56px;
 }
 
 @media (width >= 768px) {
@@ -91,6 +91,7 @@
 
   .header__description {
     grid-column: 2;
+    margin-block-end: 163px; /* Прошу прощения, прошляпил */
   }
 }
 
@@ -112,5 +113,9 @@
 
   .header__title {
     margin-block-end: 114px;
+  }
+
+  .header__description {
+    margin-block-end: 115px;
   }
 }
